@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7eee9">
+  <meta name="description" content="Очень личная открытка для Катюши. От Егорчика.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="Катюша, с днём рождения!">
+  <meta property="og:description" content="Для Катюши. От Егорчика.">
+  <meta property="og:type" content="website">
+  <title>Катюше — от Егорчика</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><symbol id="heart" viewBox="0 0 24 24"><path d="M12 20S3 14.4 3 8.3C3 3.2 9.2 2.2 12 6.4c2.8-4.2 9-3.2 9 1.9C21 14.4 12 20 12 20Z" fill="none" stroke="currentColor" stroke-width="1.2"/></symbol><symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></symbol></defs></svg>
+  <main>
+    <section class="screen cover js-only" id="cover" aria-labelledby="cover-title">
+      <div class="cover-top"><span>Для моей лучшей подруги</span><svg aria-hidden="true"><use href="#heart"/></svg><span>От Егорчика</span></div>
+      <div class="cover-content">
+        <h1 id="cover-title">Катюше</h1>
+        <p class="birthday-line">С днём рождения!</p>
+        <button class="envelope-trigger" id="open-card" type="button" aria-label="Открыть открытку для Катюши">
+          <span class="envelope-scene" aria-hidden="true">
+            <span class="envelope-shadow"></span>
+            <span class="envelope-back"></span>
+            <span class="envelope-note"><svg><use href="#heart"/></svg></span>
+            <span class="envelope-front"></span>
+            <span class="envelope-flap"></span>
+            <img class="bow" src="assets/bow.png" width="320" height="280" alt="">
+          </span>
+          <span class="open-label">Открыть открытку <svg aria-hidden="true"><use href="#arrow"/></svg></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="screen letter-screen" id="letter" aria-labelledby="letter-title" hidden>
+      <nav class="screen-nav" aria-label="Навигация открытки"><button class="text-button" type="button" data-go="cover"><span aria-hidden="true">←</span> К конверту</button></nav>
+      <article class="letter-paper">
+        <div class="paper-corner" aria-hidden="true"></div>
+        <h2 id="letter-title" tabindex="-1">Катюша,<br><em>с днём рождения!</em></h2>
+        <div class="letter-copy">
+          <p>Я очень рад, что в моей жизни есть такая бести, как ты. Ты невероятно добрая, искренняя и красивая. И мне хочется, чтобы ты почаще вспоминала об этом сама, даже в те дни, когда всё идёт немного не по плану.</p>
+          <p>Я безумно ценю нашу дружбу. Да, мы не всегда часто болтаем и гуляем, у каждого свои дела и вечное «надо как-нибудь встретиться». Но с тобой всё равно легко. Можно быть собой, говорить всякую ерунду, смеяться без причины и знать, что тебя понимают. Для меня это очень много значит.</p>
+          <p>Хочу пожелать тебе счастья — такого, которое чувствуешь в обычный вторник, а не только по большим праздникам. Здоровья, настоящей любви и исполнения желаний, даже тех, которые ты пока никому не рассказываешь. Пусть будет больше путешествий, спонтанных планов, красивых мест и вечеров, которые потом вспоминаешь с улыбкой.</p>
+          <p>Живи полной грудью и верь в себя. Ты можешь гораздо больше, чем иногда кажется. Пусть рядом будут надёжные люди, с которыми спокойно и весело. А чудаков на букву «м» пусть встречается как можно меньше — желательно вообще по нулям.</p>
+          <p>И пожалуйста, не откладывай всё хорошее на потом. Покупай билеты, пробуй новое, выбирай то, что радует именно тебя. Очень хочу, чтобы этот год принёс тебе побольше поводов сказать: «Как же мне сейчас хорошо».</p>
+          <p>У нас впереди ещё куча историй, разговоров и встреч. А если понадобится помощь, компания или просто человек, которому можно написать, — ты всегда можешь рассчитывать на меня.</p>
+          <p>Обнимаю. Пусть у тебя всё получается, Катюша!</p>
+        </div>
+        <div class="signature"><p>Егорчик</p><svg aria-hidden="true"><use href="#heart"/></svg></div>
+      </article>
+      <div class="letter-after"><p>А теперь — маленькое дополнение.</p><button class="primary-button" id="get-gift" type="button">Получить подарок <svg aria-hidden="true"><use href="#arrow"/></svg></button></div>
+    </section>
+
+    <section class="screen gift-screen" id="gift" aria-labelledby="gift-title" hidden>
+      <nav class="screen-nav" aria-label="Навигация подарка"><button class="text-button" type="button" data-go="letter"><span aria-hidden="true">←</span> К письму</button></nav>
+      <div class="gift-wrap">
+        <article class="certificate">
+          <div class="certificate-top"><span>Личный подарок</span><svg aria-hidden="true"><use href="#heart"/></svg><span>Для Катюши</span></div>
+          <h2 id="gift-title" tabindex="-1">Тебе можно<br><em>бесконечно.</em></h2>
+          <div class="infinity" aria-label="Безлимит">∞</div>
+          <p class="certificate-label">Этот сертификат дарит тебе</p>
+          <div class="gift-services">
+            <p><span>безлимитное использование гптшки Егорчика</span></p>
+            <p><span>безлимитное создание презентаций и всего чего Катюша желает</span></p>
+          </div>
+          <div class="certificate-bottom"><span>Без срока годности</span><span class="certificate-signature">Егорчик</span></div>
+        </article>
+        <button class="primary-button claim-button" id="claim-gift" type="button">Ура, забираю! <svg aria-hidden="true"><use href="#heart"/></svg></button>
+        <div class="claim-confirmation" id="claim-confirmation" hidden><svg aria-hidden="true"><use href="#heart"/></svg><p>Всё твоё, Катюша.</p></div>
+      </div>
+      <p class="page-footer">лучшая бести</p>
+    </section>
+    <noscript><article class="noscript-letter"><p class="eyebrow">От Егорчика</p><h1>Катюша, с днём рождения!</h1><p>Я очень рад, что в моей жизни есть такая бести, как ты. Ты невероятно добрая, искренняя и красивая. Безумно ценю нашу дружбу: даже если мы болтаем и гуляем редко, с тобой можно быть собой.</p><p>Счастья тебе, здоровья, настоящей любви, исполнения желаний и путешествий. Живи полной грудью, верь в себя, пусть рядом будут надёжные люди и поменьше чудаков на букву «м». У нас впереди ещё куча историй, и ты всегда можешь рассчитывать на меня.</p><p>А мой подарок тебе — безлимитное использование гптшки Егорчика и безлимитное создание презентаций и всего чего Катюша желает. Просто напиши мне — и погнали!</p><p>Егорчик</p></article><style>.js-only{display:none}</style></noscript>
+  </main>
+  <div class="sr-only" id="announcer" role="status" aria-live="polite" aria-atomic="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+</body>
+</html>
